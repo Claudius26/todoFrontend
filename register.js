@@ -34,7 +34,7 @@ const register = async (form) => {
 }
 
 document.querySelector('#goBack').addEventListener('click', ()=>{
-  window.location.href = '/homepage.html'
+  window.location.href = '/index.html'
 })
 
 document.querySelector('.registerButtonJs').addEventListener('click', (e)=>{
