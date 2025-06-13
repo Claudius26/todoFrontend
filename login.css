@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.mainContainer {
+  width: 100%;
+  max-width: 500px;
+  background-color: #2f4f4f; 
+  border-radius: 15px;
+  padding: 30px 40px;
+  box-shadow: 0 0 20px rgba(255, 127, 80, 0.4); 
+  border: 2px solid coral;
+}
+
+.loginSession h1 {
+  font-size: 2rem;
+  color: coral;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.emailLabelDiv {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input_label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.emailClass {
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  background-color: #f8f8f8;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.emailClass:focus {
+  border-color: coral;
+  outline: none;
+}
+
+.action_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.back-button {
+  font-size: 1rem;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.back-button:hover {
+  color: coral;
+}
+
+.login-Buttons {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: coral;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-Buttons:hover {
+  background-color: #ff7f50d1;
+}

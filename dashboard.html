@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/dashboard.css">
+  <title>Todo Dashboard</title>
+</head>
+<body>
+  <section>
+      <div class="container">
+        <div>
+          <h1>
+            TodoApplication
+          </h1>
+        </div>
+
+        <div>
+          <p class="addTask addButton"><span>&#10133;</span> Add To Task</p>
+          <p class="deleteATask deleteButton"><span>&#10060;</span>Delete A Task</p>
+      
+          <p class="viewATask viewTaskButton"><span>&#128065;</span>View Task</p>
+        
+          <p class="deleteUnfinshedTask deleteIncompleteTask"><span>&#10060;</span>Delete Unfinished Tasks</p>
+
+          <div class="confirmBox" style="display: none;" id="customAlert">
+            <div class="alertBox">
+               <p>Are you sure you want to delete all unfinished tasks?</p>
+              <button id="confirmYes">Yes</button>
+              <button id="confirmNo">No</button>
+
+            </div>
+          </div>
+
+
+          <p class="deleteFinishedTask deleteIncompleteTask"><span>&#10060;</span>Delete Finished Tasks</p>
+
+          <p class="viewCompletedTask deleteIncompleteTask"><span>&#128203;</span>View Completed Tasks</p>
+          <p class="viewInCompleteTasks deleteIncompleteTask"><span>&#128203;</span>View Incomplete Tasks</p>
+
+          <div class="tasksContainer">
+            
+          </div>
+
+           <div id="inputContainer" class="inputContainerJs">
+            <input type="text" id="textInput" placeholder="">
+          </div>
+
+          <div class="logoutdiv">
+            <p class="back-button" id="goBack" type="button">&larr;Back</p>
+
+            <button class="logOutButton logOutButtonJs">Log Out</button>
+          </div>
+
+        </div>
+      </div>
+  </section>
+  
+</body>
+
+<script src="/dashboard.js"></script>
+</html>

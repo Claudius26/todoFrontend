@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+  min-height: 100vh;
+  display: block;
+  color: #333;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+section {
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin: 0 auto 40px auto;
+}
+
+.container h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1d3557;
+}
+
+.container p {
+  font-size: 1rem;
+  padding: 12px 18px;
+  border-radius: 8px;
+  margin: 10px 0;
+  background-color: #f8f9fa;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.container p:hover {
+  background-color: #e2e6ea;
+  transform: translateY(-2px);
+}
+
+.addButton {
+  background-color: #28a745;
+  color: black;
+}
+
+.addButton:hover {
+  background-color: #218838;
+}
+
+.deleteButton {
+  background-color: #dc3545;
+  color: black;
+}
+
+.deleteButton:hover {
+  background-color: #c82333;
+}
+
+.viewTaskButton {
+  background-color: #007bff;
+  color: black;
+}
+
+.viewTaskButton:hover {
+  background-color: #0056b3;
+}
+
+.deleteIncompleteTask {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.deleteIncompleteTask:hover {
+  background-color: #e0a800;
+}
+
+.inputContainerJs {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.inputContainerJs input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.inputContainerJs input:focus {
+  border-color: #007bff;
+}
+
+.tasksContainer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tasks {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+.tasks input[type="checkbox"] {
+  transform: scale(1.2);
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.todoDiv {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.todoDiv p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.taskToAccomplish {
+  margin-left: 6px;
+}
+
+.confirmBox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.alertBox {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+.alertBox p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.alertBox button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#confirmYes {
+  background-color: #dc3545;
+  color: white;
+}
+
+#confirmYes:hover {
+  background-color: #c82333;
+}
+
+#confirmNo {
+  background-color: #6c757d;
+  color: white;
+}
+
+#confirmNo:hover {
+  background-color: #5a6268;
+}
+
+.logoutdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.back-button {
+  font-size: 1rem;
+  color: #6c757d;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.back-button:hover {
+  color: #495057;
+}
+
+.logOutButton {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  background-color: #6c757d;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logOutButton:hover {
+  background-color: #5a6268;
+}
+
+@media (max-width: 500px) {
+  .todoDiv {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  section {
+    padding: 25px;
+  }
+
+  .logoutdiv {
+    flex-direction: column;
+  }
+
+  .logOutButton {
+    width: 100%;
+  }
+}

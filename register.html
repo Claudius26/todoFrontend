@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register</title>
+  <link rel="stylesheet" href="/register.css" />
+</head>
+<body>
+  <div class="form-container">
+    <div class="register-box">
+      <form action="">
+        <div class="register-header">
+          <h1>Register</h1>
+        </div>
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstname" placeholder="Enter your first name" required>
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+        </div>
+        <div class="form-group">
+          <label for="emailId">Email</label>
+          <input type="email" id="emailId" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="passwordId">Password</label>
+          <input type="password" id="passwordId" name="password" placeholder="Enter your password" required minlength="6" maxlength="6">
+        </div>
+
+        <div class="form-actions">
+        <button type="button" class="back-button" id="goBack">&larr; Back</button>
+        <button type="submit" class="register-button registerButtonJs">Register</button>
+      </div>
+      
+    </form>
+      
+  </div>
+</div>
+</body>
+<script src="/register.js"></script>
+</html>
